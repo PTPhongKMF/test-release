@@ -4,5 +4,7 @@
   "version-files": {
     "path": "package.json",
     "selector": "$.version"
-  }
+  },
+  
+  "stop-resolving-commit-at": 10
 }
