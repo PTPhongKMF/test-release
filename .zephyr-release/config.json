@@ -1,11 +1,40 @@
 {
   "$schema": "https://raw.githubusercontent.com/Pandoriux/zephyr-release/refs/heads/canary/schemas/v1/config-v1.kebab.json",
 
+  "commit-types": [
+    {
+      "type": "feat",
+      "section": "✨ Features",
+      "section-alt": "Features"
+    },
+    {
+      "type": "fix",
+      "section": "🐛 Bug Fixes",
+      "section-alt": "Bug Fixes"
+    },
+    {
+      "type": "perf",
+      "section": "Performance Improvements"
+    },
+    {
+      "type": "revert",
+      "section": "Reverts"
+    }
+  ],
   "version-files": {
     "path": "package.json",
     "selector": "$.version"
   },
-  
-  "review": {"body-template": "⚠ Warning, this is header\n\n{{ changelogRelease }}"},
-  "stop-resolving-commit-at": 10
+
+  "review": {
+    "body-template": "⚠ Warning, this is header\n\n{{ changelogRelease }}"
+  },
+  "stop-resolving-commit-at": 10,
+
+  "changelog": {
+    "file-release-template": "{{ changelogReleaseAlt }}",
+
+    "release-breaking-section-heading": "### ⚠ BREAKING CHANGES",
+    "release-breaking-section-heading-alt": "### BREAKING CHANGES"
+  }
 }
