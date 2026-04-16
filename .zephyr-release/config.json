@@ -30,6 +30,7 @@
     "body-template": "⚠ Warning, this is header\n\n{{ changelogRelease }}"
   },
   "stop-resolving-commit-at": 10,
+  "resolve-until-commit-hash": "4f654b59918c3c2ebca098590cb22e87a1d83ea9",
 
   "changelog": {
     "file-release-template": "{{ changelogReleaseAlt }}",
