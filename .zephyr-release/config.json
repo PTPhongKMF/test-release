@@ -33,6 +33,9 @@
   "resolve-until-commit-hash": "4f654b59918c3c2ebca098590cb22e87a1d83ea9",
 
   "changelog": {
+"commit-sort-order": "newest-first",
+"commit-group-mode": "scope-last",
+
     "file-release-template": "{{ changelogReleaseAlt }}",
 
     "release-breaking-section-heading": "### ⚠ BREAKING CHANGES",
